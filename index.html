@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Tech - Programación Web II</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1>TechStore Univalle</h1>
+        <p>Catálogo de periféricos y componentes</p>
+    </header>
+
+    <main class="contenedor">
+        <section class="filtros">
+            <button onclick="filtrarProductos('todos')" class="btn activo">Todos</button>
+            <button onclick="filtrarProductos('perifericos')" class="btn">Periféricos</button>
+            <button onclick="filtrarProductos('monitores')" class="btn">Monitores</button>
+        </section>
+
+        <section id="grid-productos" class="grid"></section>
+    </main>
+
+    <footer>
+        <p>Programación Web II - Práctica de Despliegue Remoto</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

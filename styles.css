@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #222;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #8b0032;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.8rem 1rem;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex: 1;
+    width: 100%;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 8px 18px;
+    border: 1px solid #8b0032;
+    background: #fff;
+    color: #8b0032;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn:hover, .btn.activo {
+    background: #8b0032;
+    color: #fff;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid #8b0032;
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    font-size: 1.15rem;
+}
+
+.categoria {
+    display: inline-block;
+    font-size: 0.8rem;
+    background: #eef1f6;
+    padding: 3px 8px;
+    border-radius: 4px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.precio {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #8b0032;
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    background: #222;
+    color: #ccc;
+    font-size: 0.9rem;
+}
